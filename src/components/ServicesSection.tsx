@@ -8,7 +8,7 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-20 md:py-28">
+    <section id="services" className="pt-6 md:pt-10 pb-20 md:pb-28">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 md:gap-16">
           <div>
