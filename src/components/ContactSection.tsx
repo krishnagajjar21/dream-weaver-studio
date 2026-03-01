@@ -39,7 +39,7 @@ const ContactSection = () => {
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           {/* Left — Text + Socials */}
           <div className="order-2 md:order-1">
-            <h2 className="font-heading text-3xl md:text-5xl font-bold mb-6">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
               Let's work together ✨
             </h2>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
@@ -71,9 +71,9 @@ const ContactSection = () => {
           </div>
 
           {/* Right — Photo */}
-          <div className="flex flex-col items-center md:items-end order-1 md:order-2">
-            <div className="w-48 h-48 md:w-64 md:h-64 rounded-2xl bg-muted border border-border flex items-center justify-center overflow-hidden">
-              <span className="text-6xl">👩‍💻</span>
+          <div className="flex flex-col items-center md:items-end order-1 md:order-2 w-full md:w-auto">
+            <div className="w-full aspect-square max-w-sm md:w-64 md:h-64 rounded-2xl border border-border overflow-hidden">
+              <img src="/image.png" alt="Megha Ambasana" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
