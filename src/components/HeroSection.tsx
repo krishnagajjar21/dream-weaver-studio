@@ -10,7 +10,7 @@ const tags = [
 const HeroSection = () => {
   return (
     <section className="relative min-h-[50vh] md:min-h-[60vh] flex flex-col justify-center overflow-hidden pb-0">
-      <div className="container py-10 md:py-12">
+      <div className="container py-16 md:py-20">
         <span className="inline-block px-3 py-1 mb-4 rounded-full bg-tag-blue text-black text-xs font-medium tracking-wider">Hiring? Mai Hu Na👋</span>
         <p className="max-w-lg text-base md:text-lg text-muted-foreground leading-relaxed mb-12 md:mb-16">
           Just a not-so-normal girl in her 20s who accidentally fell in love with words. 
