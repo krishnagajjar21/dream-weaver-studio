@@ -6,14 +6,6 @@ const socials = [
   { label: "Mail", href: "mailto:meghaambasana@gmail.com", icon: "✉" },
 ];
 
-const headingTags = [
-  { label: "Copy", color: "bg-tag-yellow text-black", rotate: "-4deg", delay: "0s" },
-  { label: "Ads", color: "bg-tag-pink text-black", rotate: "3deg", delay: "0.5s" },
-  { label: "SEO", color: "bg-tag-blue text-black", rotate: "-2deg", delay: "1s" },
-  { label: "Reels", color: "bg-tag-green text-black", rotate: "4deg", delay: "0.3s" },
-  { label: "Scripts", color: "bg-tag-orange text-black", rotate: "-3deg", delay: "0.8s" },
-];
-
 const ContactSection = () => {
   return (
     <section id="contact" className="py-20 md:py-28 bg-card">
@@ -31,29 +23,12 @@ const ContactSection = () => {
               I'm looking to bring my chaos and creativity to a team that wants to grow, experiment, and actually get noticed.
             </p>
             <div className="flex items-center gap-3 flex-wrap">
-              <div className="relative inline-block">
-                <a
-                  href="mailto:meghaambasana@gmail.com"
-                  className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-primary text-primary-foreground font-heading font-semibold text-base hover:opacity-90 transition-opacity"
-                >
-                  CONTACT ME
-                </a>
-                {headingTags.map((tag, i) => (
-                  <span
-                    key={tag.label}
-                    className={`absolute inline-block px-1.5 py-0.5 rounded-full text-[8px] font-medium ${tag.color} animate-float pointer-events-none select-none ${
-                      i === 0 ? "-top-4 -left-3" :
-                      i === 1 ? "-top-3 right-2" :
-                      i === 2 ? "top-1/2 -right-8" :
-                      i === 3 ? "-bottom-4 left-4" :
-                      "-bottom-3 right-8"
-                    }`}
-                    style={{ animationDelay: tag.delay, "--rotate": tag.rotate } as React.CSSProperties}
-                  >
-                    {tag.label}
-                  </span>
-                ))}
-              </div>
+              <a
+                href="mailto:meghaambasana@gmail.com"
+                className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-primary text-primary-foreground font-heading font-semibold text-base hover:opacity-90 transition-opacity"
+              >
+                CONTACT ME
+              </a>
               {socials.map((s) => (
                 <a
                   key={s.label}
