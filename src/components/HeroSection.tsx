@@ -1,10 +1,10 @@
 const tags = [
-  { label: "Social Media Copy", color: "bg-tag-yellow/20 text-tag-yellow", rotate: "-6deg", position: "left-[5%] top-[15%] md:left-[8%] md:top-[20%]" },
-  { label: "Ad Copies", color: "bg-tag-pink/20 text-tag-pink", rotate: "4deg", position: "left-[25%] top-[55%] md:left-[30%] md:top-[50%]" },
-  { label: "Scripts", color: "bg-tag-green/20 text-tag-green", rotate: "-3deg", position: "right-[30%] top-[10%] md:right-[35%] md:top-[15%]" },
-  { label: "SEO Writing", color: "bg-tag-blue/20 text-tag-blue", rotate: "5deg", position: "right-[5%] top-[45%] md:right-[10%] md:top-[40%]" },
-  { label: "Content Strategy", color: "bg-tag-orange/20 text-tag-orange", rotate: "-4deg", position: "right-[15%] top-[75%] md:right-[20%] md:top-[70%]" },
-  { label: "Copywriting", color: "bg-tag-yellow/20 text-tag-yellow", rotate: "3deg", position: "left-[15%] top-[80%] md:left-[18%] md:top-[75%]" },
+  { label: "Social Media Copy", color: "bg-tag-yellow text-black", rotate: "-6deg", position: "left-[5%] top-[15%] md:left-[8%] md:top-[20%]" },
+  { label: "Ad Copies", color: "bg-tag-pink text-black", rotate: "4deg", position: "left-[25%] top-[55%] md:left-[30%] md:top-[50%]" },
+  { label: "Scripts", color: "bg-tag-green text-black", rotate: "-3deg", position: "right-[30%] top-[10%] md:right-[35%] md:top-[15%]" },
+  { label: "SEO Writing", color: "bg-tag-blue text-black", rotate: "5deg", position: "right-[5%] top-[45%] md:right-[10%] md:top-[40%]" },
+  { label: "Content Strategy", color: "bg-tag-orange text-black", rotate: "-4deg", position: "right-[15%] top-[75%] md:right-[20%] md:top-[70%]" },
+  { label: "Copywriting", color: "bg-tag-yellow text-black", rotate: "3deg", position: "left-[15%] top-[80%] md:left-[18%] md:top-[75%]" },
 ];
 
 const HeroSection = () => {
