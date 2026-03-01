@@ -21,37 +21,39 @@ const ContactSection = () => {
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           {/* Left — Text + Socials */}
           <div className="order-2 md:order-1">
-            <div className="relative inline-block mb-6">
+            <div className="mb-6">
               <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase">
                 LET'S WORK TOGETHER ✨
               </h2>
-              {headingTags.map((tag, i) => (
-                <span
-                  key={tag.label}
-                  className={`absolute inline-block px-1.5 py-0.5 rounded-full text-[8px] font-medium ${tag.color} animate-float pointer-events-none select-none ${
-                    i === 0 ? "-top-3 -left-2" :
-                    i === 1 ? "-top-2 right-0" :
-                    i === 2 ? "top-1/2 -right-10" :
-                    i === 3 ? "-bottom-3 left-8" :
-                    "-bottom-2 right-12"
-                  }`}
-                  style={{ animationDelay: tag.delay, "--rotate": tag.rotate } as React.CSSProperties}
-                >
-                  {tag.label}
-                </span>
-              ))}
             </div>
             <p className="text-muted-foreground text-sm md:text-base mb-8 leading-relaxed">
               If my work made you pause for a second and think, "Hmm, बुरा तो नहीं है," then we're already halfway there.
               I'm looking to bring my chaos and creativity to a team that wants to grow, experiment, and actually get noticed.
             </p>
             <div className="flex items-center gap-3 flex-wrap">
-              <a
-                href="mailto:meghaambasana@gmail.com"
-                className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-primary text-primary-foreground font-heading font-semibold text-base hover:opacity-90 transition-opacity"
-              >
-                CONTACT ME
-              </a>
+              <div className="relative inline-block">
+                <a
+                  href="mailto:meghaambasana@gmail.com"
+                  className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-primary text-primary-foreground font-heading font-semibold text-base hover:opacity-90 transition-opacity"
+                >
+                  CONTACT ME
+                </a>
+                {headingTags.map((tag, i) => (
+                  <span
+                    key={tag.label}
+                    className={`absolute inline-block px-1.5 py-0.5 rounded-full text-[8px] font-medium ${tag.color} animate-float pointer-events-none select-none ${
+                      i === 0 ? "-top-4 -left-3" :
+                      i === 1 ? "-top-3 right-2" :
+                      i === 2 ? "top-1/2 -right-8" :
+                      i === 3 ? "-bottom-4 left-4" :
+                      "-bottom-3 right-8"
+                    }`}
+                    style={{ animationDelay: tag.delay, "--rotate": tag.rotate } as React.CSSProperties}
+                  >
+                    {tag.label}
+                  </span>
+                ))}
+              </div>
               {socials.map((s) => (
                 <a
                   key={s.label}
