@@ -8,7 +8,7 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="pt-0 md:pt-2 pb-20 md:pb-28">
+    <section id="services" className="pt-8 md:pt-12 pb-20 md:pb-28">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 md:gap-16">
           <div>
