@@ -1,3 +1,5 @@
+import ThemeToggle from "@/components/ThemeToggle";
+
 const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Work", href: "#work" },
@@ -22,13 +24,17 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
+          <ThemeToggle />
         </div>
-        <a
-          href="mailto:hello@example.com"
-          className="md:hidden text-sm font-medium text-primary hover:text-primary/80 transition-colors"
-        >
-          Hire Me
-        </a>
+        <div className="flex items-center gap-2 md:hidden">
+          <ThemeToggle />
+          <a
+            href="mailto:hello@example.com"
+            className="text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+          >
+            Hire Me
+          </a>
+        </div>
       </div>
     </nav>
   );
