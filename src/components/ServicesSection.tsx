@@ -29,14 +29,14 @@ const ServicesSection = () => {
           </div>
           <div className="space-y-5 text-muted-foreground text-base md:text-lg leading-relaxed">
             <p>
-              If it involves thinking, researching and writing — then I am in.
+              If it involves thinking, researching and writing, then I am in.
               I've worked across 20+ categories including FMCG, hospitality, cafés, schools, service brands, and more.
             </p>
             <p>
-              I read comments of people fighting on insta and reddit — which helps me quickly spot audience pain points, triggers, and the language they actually use.
+              I read comments of people fighting on insta and reddit, which helps me quickly spot audience pain points, triggers, and the language they actually use.
             </p>
             <p>
-              Chronically online — so internet culture, meme timing, and platform behavior? I get it.
+              Chronically online so internet culture, meme timing, and platform behavior? I get it.
             </p>
           </div>
         </div>
