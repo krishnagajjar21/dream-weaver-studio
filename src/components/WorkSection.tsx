@@ -49,12 +49,6 @@ const WorkSection = () => {
               >
                 Content
               </span>
-              <span
-                className="absolute bottom-14 right-4 inline-block px-2 py-0.5 rounded-full text-[9px] font-medium bg-tag-green/15 text-tag-green animate-float"
-                style={{ animationDelay: "0.5s", "--rotate": "4deg" } as React.CSSProperties}
-              >
-                Strategy
-              </span>
 
               {/* Center icon */}
               <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl opacity-20 group-hover:opacity-40 transition-opacity select-none pointer-events-none">
