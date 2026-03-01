@@ -18,7 +18,7 @@ const floatingTags = [
 const socials = [
   { label: "LinkedIn", href: "https://linkedin.com", icon: "in" },
   { label: "Twitter", href: "https://twitter.com", icon: "𝕏" },
-  { label: "Mail", href: "mailto:hello@example.com", icon: "✉" },
+  { label: "Mail", href: "mailto:meghaambasana@gmail.com", icon: "✉" },
 ];
 
 const ContactSection = () => {
@@ -37,8 +37,8 @@ const ContactSection = () => {
 
       <div className="container relative z-10">
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-          {/* Left — Text */}
-          <div>
+          {/* Left — Text + Socials */}
+          <div className="order-2 md:order-1">
             <h2 className="font-heading text-3xl md:text-5xl font-bold mb-6">
               Let's work together ✨
             </h2>
@@ -46,32 +46,34 @@ const ContactSection = () => {
               If my work made you pause for a second and think, "Hmm, बुरा तो नहीं है," then we're already halfway there.
               I'm looking to bring my chaos and creativity to a team that wants to grow, experiment, and actually get noticed.
             </p>
-            <a
-              href="mailto:hello@example.com"
-              className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-primary text-primary-foreground font-heading font-semibold text-base hover:opacity-90 transition-opacity"
-            >
-              CONTACT ME
-            </a>
-          </div>
-
-          {/* Right — Photo + Socials */}
-          <div className="flex flex-col items-end">
-            <div className="w-48 h-48 md:w-64 md:h-64 rounded-2xl bg-muted border border-border flex items-center justify-center overflow-hidden mb-4">
-              <span className="text-6xl">👩‍💻</span>
-            </div>
-            <div className="w-48 md:w-64 flex items-center justify-center gap-3">
+            <div className="flex items-center gap-3 flex-wrap">
+              <a
+                href="mailto:meghaambasana@gmail.com"
+                className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-primary text-primary-foreground font-heading font-semibold text-base hover:opacity-90 transition-opacity"
+              >
+                CONTACT ME
+              </a>
               {socials.map((s) => (
                 <a
                   key={s.label}
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1 px-3 py-1.5 rounded-full border border-border bg-background text-xs font-medium text-foreground hover:border-primary/40 hover:bg-primary/5 transition-all"
+                  className="group flex items-center gap-0 w-10 h-10 rounded-full border border-border bg-background text-foreground hover:border-primary/40 hover:bg-primary/5 hover:w-auto hover:px-4 transition-all duration-300 overflow-hidden justify-center"
                 >
-                  <span className="text-sm">{s.icon}</span>
-                  {s.label}
+                  <span className="text-base shrink-0">{s.icon}</span>
+                  <span className="max-w-0 overflow-hidden group-hover:max-w-[80px] group-hover:ml-1.5 transition-all duration-300 text-xs font-medium whitespace-nowrap">
+                    {s.label}
+                  </span>
                 </a>
               ))}
+            </div>
+          </div>
+
+          {/* Right — Photo */}
+          <div className="flex flex-col items-center md:items-end order-1 md:order-2">
+            <div className="w-48 h-48 md:w-64 md:h-64 rounded-2xl bg-muted border border-border flex items-center justify-center overflow-hidden">
+              <span className="text-6xl">👩‍💻</span>
             </div>
           </div>
         </div>
