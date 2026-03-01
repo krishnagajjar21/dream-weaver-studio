@@ -55,22 +55,21 @@ const ContactSection = () => {
           </div>
 
           {/* Right — Photo + Socials */}
-          <div className="flex flex-col items-center">
-            <div className="w-48 h-48 md:w-64 md:h-64 rounded-2xl bg-muted border border-border flex items-center justify-center overflow-hidden mb-6">
+          <div className="flex flex-col items-end">
+            <div className="w-48 h-48 md:w-64 md:h-64 rounded-2xl bg-muted border border-border flex items-center justify-center overflow-hidden mb-4">
               <span className="text-6xl">👩‍💻</span>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="w-48 md:w-64 flex items-center justify-center gap-3">
               {socials.map((s) => (
                 <a
                   key={s.label}
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 px-4 py-2 rounded-full border border-border bg-background text-sm font-medium text-foreground hover:border-primary/40 hover:bg-primary/5 transition-all"
+                  className="flex items-center gap-1 px-3 py-1.5 rounded-full border border-border bg-background text-xs font-medium text-foreground hover:border-primary/40 hover:bg-primary/5 transition-all"
                 >
-                  <span className="text-base">{s.icon}</span>
+                  <span className="text-sm">{s.icon}</span>
                   {s.label}
-                  <ExternalLink className="w-3 h-3 opacity-50" />
                 </a>
               ))}
             </div>
