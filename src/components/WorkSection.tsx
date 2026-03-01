@@ -31,15 +31,34 @@ const WorkSection = () => {
               href={brand.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group p-4 rounded-lg border border-border bg-card hover:border-primary/40 hover:bg-primary/5 transition-all"
+              className="group relative aspect-square p-4 rounded-xl border border-border bg-card hover:border-primary/40 hover:bg-primary/5 transition-all flex flex-col justify-end overflow-hidden"
             >
-              <span className="text-[10px] uppercase tracking-widest text-muted-foreground">
+              {/* Floating bubble tags */}
+              <span
+                className="absolute top-3 right-3 inline-block px-2 py-0.5 rounded-full text-[9px] font-medium bg-tag-pink/15 text-tag-pink animate-float"
+                style={{ animationDelay: "0s", "--rotate": "3deg" } as React.CSSProperties}
+              >
                 {brand.category}
               </span>
-              <h3 className="font-heading text-sm font-semibold mt-1 group-hover:text-primary transition-colors flex items-center gap-1.5">
-                {brand.name}
-                <ExternalLink className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-              </h3>
+              <span
+                className="absolute top-10 left-3 inline-block px-2 py-0.5 rounded-full text-[9px] font-medium bg-tag-blue/15 text-tag-blue animate-float"
+                style={{ animationDelay: "1s", "--rotate": "-2deg" } as React.CSSProperties}
+              >
+                Content
+              </span>
+              <span
+                className="absolute bottom-14 right-4 inline-block px-2 py-0.5 rounded-full text-[9px] font-medium bg-tag-green/15 text-tag-green animate-float"
+                style={{ animationDelay: "0.5s", "--rotate": "4deg" } as React.CSSProperties}
+              >
+                Strategy
+              </span>
+
+              <div>
+                <h3 className="font-heading text-sm font-semibold group-hover:text-primary transition-colors flex items-center gap-1.5">
+                  {brand.name}
+                  <ExternalLink className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </h3>
+              </div>
             </a>
           ))}
         </div>
